@@ -4,6 +4,11 @@
 
 import React from "react";
 
+/**
+ * A search box component that allows users to input search queries.
+ * @param {Function} searchChange - A callback function that is triggered when the search input changes.
+ * @returns {JSX.Element} - The rendered search box component.
+ */
 const SearchBox = ({ searchChange }) => {
   return (
     <div className="pa2">

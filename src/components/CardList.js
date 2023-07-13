@@ -4,6 +4,11 @@
 import React from "react";
 import Card from "./Card";
 
+/**
+ * Renders a list of cards for each robot in the provided array.
+ * @param {Array} robots - An array of robot objects.
+ * @returns The JSX code for rendering the list of cards.
+ */
 const CardList = ({ robots }) => {
   const cardsArray = robots.map((user, i) => {
     // Loop through the array of robots

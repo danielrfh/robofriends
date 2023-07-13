@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+/**
+ * A React component that acts as an error boundary, catching any errors that occur
+ * within its child components.
+ * @class ErrorBoundry
+ * @extends Component
+ */
 class ErrorBoundry extends Component {
   constructor(props) {
     super(props);

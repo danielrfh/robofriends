@@ -5,6 +5,13 @@
 
 import React from "react";
 
+/**
+ * A functional component that represents a card with user information.
+ * @param {string} name - The name of the user.
+ * @param {string} email - The email of the user.
+ * @param {number} id - The unique identifier of the user.
+ * @returns JSX code representing the card component.
+ */
 const Card = ({ name, email, id }) => {
   // Using destructuring to pass props to Card component
   return (
@@ -13,7 +20,7 @@ const Card = ({ name, email, id }) => {
     // <div></div>. Unless we use fragments
     <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadows-5">
       {/* CSS styles from tachyions */}
-      <img src={`https://robohash.org/${id}test?200x200`} alt="Robots" />
+      <img src={`https://robohash.org/${id}test?size=200x200`} alt="Robots" />
       <div>
         <h2>{name}</h2>
         <p>{email}</p>
